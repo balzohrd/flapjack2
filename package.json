@@ -1,0 +1,12 @@
+{
+  "name": "That Never Fading Smile",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*"
+  }
+}
