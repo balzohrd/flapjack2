@@ -32,6 +32,14 @@ app.use('/public', express.static(__dirname + "/public"));
 //   // app.use(express.errorHandler());
 // }
 
+// app.use(function( req, res, next ) {
+//   if( req.header( 'X-PJAX' ) ) {
+//       req.pjax = true;
+//       res.locals.pjax = true;
+//   }
+//   next();
+// })
+
 app.get('/', routes.index);
 
 app.get('/users', user.list);

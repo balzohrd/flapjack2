@@ -1,3 +1,7 @@
+//- if pjax
+//-   #main
+//-     block content
+
 html
   head
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
@@ -5,17 +9,21 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     header.Major
-      a(href="/")
+      a(href="/" data-pjax)
         img(src='https://lh3.googleusercontent.com/-t0kUj9NNNbw/Vr5j6__MHdI/AAAAAAAAIVM/YutpwEvKILI/w776-h605-no/tnfs-blk.png' width='200px' style='display: block; margin-left: auto; margin-right: auto;')
       .navigation
-        a(href="/about") About
-        a(href="/contributors") Contributors
+        a(href="/about", data-pjax) About
+        a(href="/contributors", data-pjax) Contributors
         a.page-link(href='https://soundcloud.com/that-never-fading-smile', target='_blank')
           i.fa.fa-soundcloud
         p A weekly handpicked mixtape curated by music lovers, for music lovers
+
     #main
       block content
+
     .stickyControls
+      iframe(width='420', height='315', src='http://www.youtube.com/embed/BsGeNSe5q0E?autoplay=1', frameborder='0', allowfullscreen='')
+
       .playButtonContainer
         button.flex-none.h3.action-button.button-narrow.button-transparent.button-grow.rounded(title='Play Previous Track')
           svg.icon.geomicon.secondaryIcons(data-icon='previous', style='fill:currentcolor', viewbox='0 0 32 32')
@@ -37,6 +45,7 @@ html
         i.fa.fa-heart.fa-lg
         |  For Lev - That Never Fading Smile
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+  script(src="bower/jquery-pjax/jquery.pjax.js")
   script(src="bower/underscore/underscore-min.js")
   script(src="bower/underscore-db/dist/underscore-db.min.js")
   script(src="/js/app.js")
