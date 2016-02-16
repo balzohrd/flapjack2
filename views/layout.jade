@@ -4,15 +4,15 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    header.Major  
-      a(href="/")     
+    header.Major
+      a(href="/")
         img(src='https://lh3.googleusercontent.com/-t0kUj9NNNbw/Vr5j6__MHdI/AAAAAAAAIVM/YutpwEvKILI/w776-h605-no/tnfs-blk.png' width='200px' style='display: block; margin-left: auto; margin-right: auto;')
       .navigation
-        a(href="/about") About 
+        a(href="/about") About
         a(href="/contributors") Contributors
         a.page-link(href='https://soundcloud.com/that-never-fading-smile', target='_blank')
           i.fa.fa-soundcloud
-        p A weekly handpicked mixtape curated by music lovers, for music lovers  
+        p A weekly handpicked mixtape curated by music lovers, for music lovers
     #main
       block content
     .stickyControls
@@ -30,9 +30,13 @@ html
           svg.icon.geomicon.secondaryIcons(data-icon='next', style='fill:currentcolor', viewbox='0 0 32 32')
             path(d='M4 4 L24 14 V4 H28 V28 H24 V18 L4 28 z')
       .progressContainer
-        progress.progress(value='0') NaN  
+        progress.progress(value='0') NaN
     footer.site-footer
       p.small
-        | Made with 
+        | Made with
         i.fa.fa-heart.fa-lg
         |  For Lev - That Never Fading Smile
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+  script(src="bower/underscore/underscore-min.js")
+  script(src="bower/underscore-db/dist/underscore-db.min.js")
+  script(src="/js/app.js")
