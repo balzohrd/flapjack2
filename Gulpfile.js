@@ -7,14 +7,19 @@ gulp.task('deploy', function() {
     .pipe(ghPages());
 });
 
+gulp.task('clean', function () {
+  return gulp.src('./dist', {read: false})
+    .pipe(clean());
+});
+
+
 gulp.task('copy', function () {
   return gulp
     .src(['./public/**/*'])
     .pipe(gulp.dest('dist'));
 });
 
-
-gulp.task('default',['copy', 'deploy'], function() {
+gulp.task('default',['clean', 'copy', 'deploy'], function() {
   return gulp
     .src('./views/*.jade')
     .pipe(jade({}))

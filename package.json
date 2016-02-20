@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "./node_modules/.bin/gulp default"
   },
   "dependencies": {},
   "devDependencies": {
