@@ -11,100 +11,32 @@ block content
       span.quote_author
         | - Levon Thomas
   .page-header
-    p [DATE]
-    p [Vol. #]
+
+    p {{ dateCreated  }}
+    p {{ playlist.title }}
     p
       i.fa.fa-user
       |  : [name]
 
   section#one
-    img(src='https://i1.sndcdn.com/artworks-000146644576-1usx2g-t500x500.jpg' style="display:block; margin-left:auto; margin-right:auto; width:100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);")
-    ul.list-reset.trackList
-      // ngRepeat: track in tracks
-      li.trackItem
+    //- pre
+      //- https://i1.sndcdn.com/artworks-000146644576-1usx2g-t500x500.jpg
+    img.playlist-img(v-bind:src="playlist.artwork_url.replace('-large', '-t500x500')", style="display:block; margin-left:auto; margin-right:auto; width:100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);")
+    ul.list-reset.trackList#tracklist
+
+
+      li.trackItem(v-for="item in playlist.tracks")
         .track-progress-bar
           .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
+        button.flex.flex-center.full-width.left-align.track-button.button-transparent(v-bind:data-stream="item.stream_url", v-bind:data-id="item.id")
           span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
-      li.trackItem
-        .track-progress-bar
-          .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent
-          span.trackPlay
-            i.fa.fa-play.fa-2x
-          span.trackTitle Track Title
-          span.trackArtist Artist
+            i.fa.fa-play.trackerFun.fa-2x
+          span.trackTitle {{ item.title }}
+          span.trackArtist {{ item.user.username }}
 
   .row
     h2(style='text-align:right; font-family:Ubuntu;')
-      a(href='/archive' style='cursor: pointer;') Archive
+      a(href='/archive.html' style='cursor: pointer;') Archive
 
   .tnfs-premiere
     .special-header.album-premiere

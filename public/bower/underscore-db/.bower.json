@@ -34,6 +34,5 @@
   },
   "_source": "git://github.com/typicode/underscore-db.git",
   "_target": "~0.9.1",
-  "_originalSource": "underscore-db",
-  "_direct": true
+  "_originalSource": "underscore-db"
 }
