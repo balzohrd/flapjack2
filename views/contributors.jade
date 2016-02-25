@@ -4,51 +4,21 @@
     span Contributors
   p.tnfs-content
     | That Never Fading Smile is a collaboration between some of Lev’s closest friends. We are music lovers inspired by songs, riffs and lyrics of various genres from all around the world. Each contributor brings their own unique influence to the mix, See below for more information on each of us
-  .contributors
-    figure.snip1376
-      img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg', alt='sample17')
+  .contributors#team
+    figure.snip1376(v-for='contributor in contributors')
+      img(src='{{contributor.image_path}}')
       figcaption
-        h2 Linguina Nettlewater
-        p Contributor
+        h2 {{contributor.name}}
+        p {{contributor.position}}
         p Recent Playlist:
-        .icons
-          a(href='', target='_new')
+        p.icons
+          a(v-if='contributor.soundcloud', href='https://soundcloud.com/{{contributor.soundcloud}}', target='_new')
             i.fa.fa-soundcloud
-          a(href='', target='_new')
+          a(v-if='contributor.instagram', href='https://instagram.com/{{contributor.instagram}}', target='_new')
             i.fa.fa-instagram
-          a(href='', target='_new')
+          a(v-if='contributor.twitter', href='https://www.twitter.com/{{contributor.twitter}}', target='_new')
             i.fa.fa-twitter
-          a(href='', target='_new')
-            i.fa.fa-link
-    figure.snip1376.hover
-      img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg', alt='sample47')
-      figcaption
-        h2 Max Conversion
-        p Contributor
-        p Recent Playlist:
-        .icons
-          a(href='', target='_new')
-            i.fa.fa-soundcloud
-          a(href='', target='_new')
-            i.fa.fa-instagram
-          a(href='', target='_new')
-            i.fa.fa-twitter
-          a(href='', target='_new')
-            i.fa.fa-link
-    figure.snip1376
-      img(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg', alt='sample38')
-      figcaption
-        h2 Caspian Bellevedere
-        p Contributor
-        p Recent Playlist:
-        .icons
-          a(href='', target='_new')
-            i.fa.fa-soundcloud
-          a(href='', target='_new')
-            i.fa.fa-instagram
-          a(href='', target='_new')
-            i.fa.fa-twitter
-          a(href='', target='_new')
+          a(v-if='contributor.link', href='{{contributor.link}}', target='_new')
             i.fa.fa-link
 
 
@@ -56,4 +26,3 @@
   .special-header.longread
     span Interested in Contributing to That Never Fading Smile ?
   p.tnfs-content  We are always looking for passionate music fans to contribute a playlist or song(s) suggestion to our weekly mix. If you'd like to join our collaboration please email us at ____.
-

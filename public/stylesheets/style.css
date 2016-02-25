@@ -1725,6 +1725,7 @@ body {
 .snip1376 img {
   max-width: 100%;
   vertical-align: top;
+  max-height: 315px;
 }
 .snip1376 figcaption {
   width: 100%;
