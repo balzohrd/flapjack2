@@ -11,7 +11,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:001,
     good_read:{
       title:"",
       text:"",
@@ -30,7 +30,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:002,
     good_read:{
       title:"",
       text:"",
@@ -49,7 +49,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:003,
     good_read:{
       title:"",
       text:"",
@@ -68,7 +68,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:001,
     good_read:{
       title:"",
       text:"",
@@ -87,7 +87,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:004,
     good_read:{
       title:"",
       text:"",
@@ -106,7 +106,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:002,
     good_read:{
       title:"",
       text:"",
@@ -125,7 +125,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:005,
     good_read:{
       title:"",
       text:"",
@@ -163,7 +163,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:006,
     good_read:{
       title:"",
       text:"",
@@ -182,7 +182,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:002,
     good_read:{
       title:"",
       text:"",
@@ -201,7 +201,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:007,
     good_read:{
       title:"",
       text:"",
@@ -220,7 +220,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:003,
     good_read:{
       title:"",
       text:"",
@@ -239,7 +239,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:008,
     good_read:{
       title:"",
       text:"",
@@ -258,7 +258,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:005,
     good_read:{
       title:"",
       text:"",
@@ -277,7 +277,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:001,
     good_read:{
       title:"",
       text:"",
@@ -296,7 +296,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:009,
     good_read:{
       title:"",
       text:"",
@@ -315,7 +315,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:010,
     good_read:{
       title:"",
       text:"",
@@ -334,7 +334,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:011,
     good_read:{
       title:"",
       text:"",
@@ -353,7 +353,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:012,
     good_read:{
       title:"",
       text:"",
@@ -372,7 +372,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:013,
     good_read:{
       title:"",
       text:"",
@@ -391,7 +391,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:014,
     good_read:{
       title:"",
       text:"",
@@ -410,7 +410,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:015,
     good_read:{
       title:"",
       text:"",
@@ -448,7 +448,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:016,
     good_read:{
       title:"",
       text:"",
@@ -467,7 +467,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:003,
     good_read:{
       title:"",
       text:"",
@@ -486,7 +486,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:002,
     good_read:{
       title:"",
       text:"",
@@ -505,7 +505,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:008,
     good_read:{
       title:"",
       text:"",
@@ -524,7 +524,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:007,
     good_read:{
       title:"",
       text:"",
@@ -543,7 +543,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:013,
     good_read:{
       title:"",
       text:"",
@@ -562,7 +562,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:005,
     good_read:{
       title:"",
       text:"",
@@ -581,7 +581,7 @@ var $dataModel = [
       text:"",
       author:""
     },
-    contributor:"",
+    contributor:018,
     good_read:{
       title:"",
       text:"",
