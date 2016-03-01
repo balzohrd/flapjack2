@@ -2,28 +2,16 @@
   .special-header.header_quote
     i.fa.fa-music.fa-2x
     span Archive
+
   p.tnfs-content
-    .archive
-      img(src='https://s3.amazonaws.com/thumbnail.canva.com/DABZc0Ml_BY/9/thumbnail/0001-122645895.png')
-      .archive_caption
-        p
-          img.himg(src='https://lh6.googleusercontent.com/-ik5GS_SDQJY/VpQcuGZgsyI/AAAAAAAAIRQ/dfGm15xr4r8/w430-h335-no/tnfs-wht.png')
-        .heading
-          h2 vol. 3
-      a(href='#')
-    .archive
-      img(src='https://s3.amazonaws.com/thumbnail.canva.com/DABZc8ApU6A/10/thumbnail/0001-122645809.png')
-      .archive_caption
-        p
-          img.himg(src='https://lh6.googleusercontent.com/-ik5GS_SDQJY/VpQcuGZgsyI/AAAAAAAAIRQ/dfGm15xr4r8/w430-h335-no/tnfs-wht.png')
-        .heading
-          h2 vol. 2
-      a(href='#')
-    .archive
-      img(src='https://s3.amazonaws.com/thumbnail.canva.com/DABZc9_7tTM/5/thumbnail/0001-122645712.png')
-      .archive_caption
-        p
-          img.himg(src='https://lh6.googleusercontent.com/-ik5GS_SDQJY/VpQcuGZgsyI/AAAAAAAAIRQ/dfGm15xr4r8/w430-h335-no/tnfs-wht.png')
-        .heading
-          h2 vol.1
-      a(href='#')
+    div#listOfPlayLists
+      pre {{ playlists }}
+      .archive(v-for="items in playlists | orderBy 'volume_number'")
+        img(src='{{items.artwork_url}}')
+        .archive_caption
+          p
+            img.himg(src='https://lh6.googleusercontent.com/-ik5GS_SDQJY/VpQcuGZgsyI/AAAAAAAAIRQ/dfGm15xr4r8/w430-h335-no/tnfs-wht.png')
+          .heading
+            h2 vol. {{ item.volume_number }}
+        a.clickLoadTrack(href='#', data-playlist="{{ items.playlist_url}}")
+
