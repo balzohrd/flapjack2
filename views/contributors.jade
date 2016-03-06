@@ -6,7 +6,7 @@
     | That Never Fading Smile is a collaboration between some of Lev’s closest friends. We are music lovers inspired by songs, riffs and lyrics of various genres from all around the world. Each contributor brings their own unique influence to the mix, See below for more information on each of us
   .contributors#team
     figure.snip1376(v-for='contributor in contributors')
-      img(src='{{contributor.image_path}}')
+      img(v-bind:src="contributor.image_path")
       figcaption
         h2 {{contributor.name}}
         p {{contributor.position}}

@@ -5,13 +5,11 @@
 
   p.tnfs-content
     div#listOfPlayLists
-      pre {{ playlists }}
       .archive(v-for="items in playlists | orderBy 'volume_number'")
-        img(src='{{items.artwork_url}}')
+        img(v-bind:src="items.artwork_url")
         .archive_caption
           p
             img.himg(src='https://lh6.googleusercontent.com/-ik5GS_SDQJY/VpQcuGZgsyI/AAAAAAAAIRQ/dfGm15xr4r8/w430-h335-no/tnfs-wht.png')
           .heading
-            h2 vol. {{ item.volume_number }}
+            h2 vol. {{ items.volume_number }}
         a.clickLoadTrack(href='#', data-playlist="{{ items.playlist_url}}")
-

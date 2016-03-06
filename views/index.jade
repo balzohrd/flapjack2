@@ -12,8 +12,8 @@ block content
         | - Levon Thomas
   .page-header
 
-    p {{ haha.dateCreated  }}
-    p {{ haha.playlistdxs.title }}
+    p {{ data.dateCreated  }}
+    p {{ data.playlist.title }}
     p
       i.fa.fa-user
       |  : [name]
@@ -21,14 +21,14 @@ block content
   section#one
     //- pre
       //- https://i1.sndcdn.com/artworks-000146644576-1usx2g-t500x500.jpg
-    img.playlist-img(v-bind:src="haha.playlistdxs.artwork_url.replace('-large', '-t500x500')", style="display:block; margin-left:auto; margin-right:auto; width:100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);")
+    img.playlist-img(v-bind:src="data.playlist.artwork_url.replace('-large', '-t500x500')", style="display:block; margin-left:auto; margin-right:auto; width:100%; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);")
     ul.list-reset.trackList#tracklist
 
 
-      li.trackItem(v-for="item in haha.playlistdxs.tracks")
+      li.trackItem(v-for="item in data.playlist.tracks")
         .track-progress-bar
           .play-bg(style='width:0%')
-        button.flex.flex-center.full-width.left-align.track-button.button-transparent(v-bind:data-stream="item.stream_url", v-bind:data-id="item.id")
+        button.flex.flex-center.full-width.left-align.track-button.button-transparent(class="track_{{ $index }}", v-on:click="playMusic($index)")
           span.trackPlay
             i.fa.fa-play.trackerFun.fa-2x
           span.trackTitle {{ item.title }}

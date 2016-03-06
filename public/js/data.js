@@ -5,7 +5,7 @@ var $contributors = [
     position: "Co-founder",
     soundcloud: "galaznct",
     link: "https://dng.io/",
-    id:001
+    id:"001",
   },
   {
     name: "Nicholas Byron",
@@ -13,14 +13,14 @@ var $contributors = [
     position: "Co-founder",
     soundcloud: "nbyronn",
     instagram: "byrons_life",
-    id:002
+    id:"002"
   },
   {
     name: "Mauricio Medina",
     image_path: "images/mauricio_m.png",
     position: "Co-founder",
     soundcloud: "mauricemedina-1",
-    id:003
+    id:"003"
   },
 
 
@@ -29,14 +29,14 @@ var $contributors = [
     position: "Contributor",
     soundcloud: "sebastian-medina-33",
     twitter: "sebocuban09",
-    id:004
+    id:"004"
   },
   {
     name: "Andre Tufenkjian",
     image_path: "images/andre_t.png",
     position: "Contributor",
     soundcloud: "atuf25",
-    id:005
+    id:"005"
   },
   {
     name: "Nairi Mardirossian",
@@ -44,7 +44,7 @@ var $contributors = [
     position: "Contributor",
     soundcloud: "nairi-mardirossian",
     instagram: "nairi_talar",
-    id:006
+    id:"006"
   },
   {
     name: "Daniella Azencot",
@@ -52,42 +52,42 @@ var $contributors = [
     position: "Contributor",
     twitter: "webremedies",
     link: "https://dng.io/",
-    id:007
+    id:"007"
   },
   {
     name: "Pamela Camacho",
     image_path: "images/pam_c.jpg",
     position: "Contributor",
     soundcloud: "pacamacho",
-    id:008
+    id:"008"
   },
   {
     name: "Wendi Spielman",
     image_path: "images/wendi_s.jpg",
     position: "Contributor",
     instagram: "wendi.spielman",
-    id:009
+    id:"009"
   },
   {
     name: "Chris Yun",
     image_path: "images/chris_y.jpg",
     position: "Contributor",
     soundcloud: "chrisyun12",
-    id:010
+    id:"010"
   },
   {
     name: "Satine Iskandaryan",
     image_path: "images/satine.jpg",
     position: "Contributor",
     twitter: "sunbummm",
-    id:011
+    id:"011"
   },
   {
     name: "David Shaumyan",
     image_path: "images/david_s.jpg",
     position: "Contributor",
     twitter: "davoASAP",
-    id:012
+    id:"012"
   },
   {
     name: "Zaid Moreno",
@@ -96,21 +96,21 @@ var $contributors = [
     soundcloud: "zaid-moreno",
     twitter: "MorenoZaid",
     instagram: "zaidmoreno",
-    id:013
+    id:"013"
   },
   {
     name: "Justin Nazerian",
     image_path: "images/justin_n.jpg",
     position: "Contributor",
     soundcloud: "juniorpersian",
-    id:014
+    id:"014"
   },
   {
     name: "Loris Keshishyan",
     image_path: "images/loris_k.jpg",
     position: "Contributor",
     twitter: "loriskeshishyan",
-    id:015
+    id:"015"
   },
   {
     name: "Alisher Baibussinov",
@@ -118,7 +118,7 @@ var $contributors = [
     position: "Contributor",
     twitter: "4lisherr",
     instagram: "4lisher",
-    id:016
+    id:"016"
   },
   {
     name: "Shahe Thomas",
@@ -126,11 +126,11 @@ var $contributors = [
     position: "Contributor",
     twitter: "Shahe_T",
     soundcloud: "hahehomas",
-    id:018
+    id:"018"
   }
 ];
 
-var $dataModel = [,
+var $dataModel = [
 { playlist_url: 'https://soundcloud.com/that-never-fading-smile/sets/vol-4',
   ft_artist: { title: '', text: '', ext_link: '', img: '' },
   quote: { text: '', author: '' },

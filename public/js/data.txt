@@ -3,7 +3,7 @@
   quote: { text: '', author: '' },
   contributor: 2,
   good_read: { title: '', text: '', author: '', ext_link: '' },
-  artwork_url: 'https://i1.sndcdn.com/artworks-000126259469-1nbovg-t500x500.jpg' }
+  artwork_url: 'https://i1.sndcdn.com/artworks-000126259469-1nbovg-t500x500.jpg' },
 { playlist_url: 'https://soundcloud.com/that-never-fading-smile/sets/vol-4-1',
   ft_artist: { title: '', text: '', ext_link: '', img: '' },
   quote: { text: '', author: '' },
